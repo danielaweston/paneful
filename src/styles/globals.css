@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --background-100: 0 0% 95%;
+    --background-200: 0 0% 90%;
+    --background-content: 0 0% 3.9%;
+
+    --primary: 250 50% 60%;
+    --primary-content: 0 0% 98%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --background-100: 0 0% 10%;
+    --background-200: 0 0% 15%;
+    --background-content: 0 0% 85%;
+
+    --primary: 250 50% 60%;
+    --primary-content: 0 0% 98%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-background-content;
+  }
+}
