@@ -22,6 +22,7 @@ It made my life easier, I hope it does the same for you.
 
 ### Planned Features
 
+- Manual zoom controls
 - Turn it into a dockerised app
 - Snap to grid
 - Save/share layouts
