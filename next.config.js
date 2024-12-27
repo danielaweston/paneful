@@ -5,7 +5,7 @@
 
 /** @type {import("next").NextConfig} */
 const config = {
-  output: "standalone",
+  output: "export",
   async headers() {
     return [
       {

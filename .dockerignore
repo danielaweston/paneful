@@ -4,3 +4,4 @@ node_modules
 *.md
 .next
 dist
+out
