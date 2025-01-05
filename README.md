@@ -23,7 +23,7 @@ It made my life easier, I hope it does the same for you.
 ### Planned Features
 
 - Manual zoom controls
-- Turn it into a dockerised app
+- Put on dockerhub
 - Snap to grid
 - Save/share layouts
 - Layout presets
@@ -40,9 +40,13 @@ It made my life easier, I hope it does the same for you.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/d-a-weston/paneful.git
+git clone https://github.com/danielaweston/paneful.git
 cd paneful
 ```
+
+You can just use `docker compose up -d` and it will build and run it on [http://localhost:3001](http://localhost:3001).
+
+Alternatively, you can run it yourself by doing the following:
 
 2. Install dependencies
 
