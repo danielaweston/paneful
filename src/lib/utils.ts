@@ -1,5 +1,6 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { v4 as uuidv4 } from "uuid";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -313,7 +314,7 @@ export const CANVAS_STATE_DEFAULT = {
   sourceUrl: "",
   panes: [
     {
-      id: crypto.randomUUID(),
+      id: uuidv4(),
       width: PANE_SIZE_VARIANTS.IPHONE_14_PRO_MAX!.width,
       height: PANE_SIZE_VARIANTS.IPHONE_14_PRO_MAX!.height,
       preMinimizedHeight: PANE_SIZE_VARIANTS.IPHONE_14_PRO_MAX!.height,
@@ -327,7 +328,7 @@ export const CANVAS_STATE_DEFAULT = {
       isMinimized: false,
     },
     {
-      id: crypto.randomUUID(),
+      id: uuidv4(),
       width: PANE_SIZE_VARIANTS.IPHONE_5_SE!.width,
       height: PANE_SIZE_VARIANTS.IPHONE_5_SE!.height,
       preMinimizedHeight: PANE_SIZE_VARIANTS.IPHONE_5_SE!.height,
@@ -341,7 +342,7 @@ export const CANVAS_STATE_DEFAULT = {
       isMinimized: false,
     },
     {
-      id: crypto.randomUUID(),
+      id: uuidv4(),
       width: PANE_SIZE_VARIANTS.IPAD_MINI!.width,
       height: PANE_SIZE_VARIANTS.IPAD_MINI!.height,
       preMinimizedHeight: PANE_SIZE_VARIANTS.IPAD_MINI!.height,
@@ -355,7 +356,7 @@ export const CANVAS_STATE_DEFAULT = {
       isMinimized: false,
     },
     {
-      id: crypto.randomUUID(),
+      id: uuidv4(),
       width: PANE_SIZE_VARIANTS.LAPTOP_HIDPI!.width,
       height: PANE_SIZE_VARIANTS.LAPTOP_HIDPI!.height,
       preMinimizedHeight: PANE_SIZE_VARIANTS.LAPTOP_HIDPI!.height,
