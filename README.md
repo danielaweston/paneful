@@ -4,6 +4,8 @@ Paneful is a responsive design testing tool that helps developers visualize thei
 
 No more constantly resizing your browser window or switching between device views - see all your breakpoints at once in a customizable layout.
 
+![paneful](https://github.com/user-attachments/assets/7210739c-8b8c-4d00-920f-235eddba024b)
+
 ## Why Paneful?
 
 I do all my work from a laptop with no external monitors, and testing responsive designs is a massive pain. Every change meant either resizing my browser window over and over, or clicking through different devices in the dev tools.
@@ -29,6 +31,10 @@ It made my life easier, I hope it does the same for you.
 - Layout presets
 
 ## Getting Started
+
+You can just run it via docker with the following, or you can build it yourself locally if you'd prefer.
+
+`docker run -d -p 3001:80 danielaweston/paneful`
 
 ### Prerequisites
 
