@@ -5,6 +5,7 @@ import { ReactZoomPanPinchContentRef } from "react-zoom-pan-pinch";
 import { TbDeviceMobilePlus } from "react-icons/tb";
 import { VscDebugRestart } from "react-icons/vsc";
 import { toast } from "sonner";
+import { v4 as uuidv4 } from "uuid";
 
 import { CANVAS_STATE_DEFAULT } from "~/lib/utils";
 import { Button } from "~/components/ui/button";
@@ -28,7 +29,7 @@ export interface MenuProps {
 const Menu = ({ canvasRef, canvasState, setCanvasState }: MenuProps) => {
   const onClickCreateNewPane = () => {
     const newPane = {
-      id: crypto.randomUUID(),
+      id: uuidv4(),
       width: 800,
       height: 600,
       preMinimizedHeight: 600,
